@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Witflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <!-- =============== HEADER =============== -->
+    <header class="header">
+        <div class="header-inner">
+            <!-- LOGO -->
+            <div class="logo-box">WİTFLİX</div>
+
+            <!-- NAV -->
+            <nav class="nav">
+                <a href="#">Ana Sayfa</a>
+                <a href="#">Filmler</a>
+                <a href="#">Diziler</a>
+                <a href="#">Listem</a>
+            </nav>
+
+            <!-- SEARCH + İKONLAR -->
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <button class="icon-circle" aria-label="Notifications">🔔</button>
+                <div class="profile-circle"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============== MAIN / HERO =============== -->
+    <main>
+
+        <section class="hero">
+            <!-- SOL TARAF -->
+            <div class="hero-text">
+                <h1>MOVIE NAME</h1>
+
+                <!-- yıldızlar + imdb + yaş + süre -->
+                <div class="hero-meta">
+                    <div class="rating-group">
+                        <span class="stars">★★★★★</span>
+                        <span class="imdb-score">7.3 IMDB</span>
+                    </div>
+
+                    <span class="badge badge-age">16+</span>
+                    <span class="badge badge-duration">2 h 21 min</span>
+                </div>
+
+                <!-- açıklama -->
+                <p class="hero-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                </p>
+
+                <!-- detay satırları -->
+                <p class="detail-line">
+                    <span class="detail-label">Starring:</span>
+                    <span class="detail-text">Lorem Ipsum, Lorem Piksum</span>
+                </p>
+                <p class="detail-line">
+                    <span class="detail-label">Genre:</span>
+                    <span class="detail-text">Lorem Ipsum, Lorem Piksum</span>
+                </p>
+                <p class="detail-line">
+                    <span class="detail-label">Tags:</span>
+                    <span class="detail-text">Lorem Ipsum, Lorem Piksum</span>
+                </p>
+
+                <!-- play butonu -->
+                <button class="btn-play btn-lg" data-movie="Movie Name">
+                    ▶ Play Now
+                </button>
+            </div>
+
+            <!-- SAĞ TARAF görsel alanı -->
+            <div class="hero-image">
+                <!-- placeholder, istersen buraya <img> koyarsın -->
+            </div>
+        </section>
+
+        <!-- =============== SECTION 1: POPULAR MOVIES =============== -->
+        <section class="section">
+            <div class="suggestion-row">
+                <div class="suggestion-title">
+                    <h2>Popular Movies</h2>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="suggestion-content">
+                    <!-- KART 1 -->
+                    <article class="suggestion-item" data-title="Movie One">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>7.3 IMDB</span>
+                                <span>16+</span>
+                                <span>2 h 21 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Movie One">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- KART 2 -->
+                    <article class="suggestion-item" data-title="Movie Two">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>7.9 IMDB</span>
+                                <span>13+</span>
+                                <span>1 h 58 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Movie Two">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- KART 3 -->
+                    <article class="suggestion-item" data-title="Movie Three">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>8.1 IMDB</span>
+                                <span>18+</span>
+                                <span>2 h 05 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Movie Three">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== SECTION 2: RECOMMENDED FOR YOU =============== -->
+        <section class="section">
+            <div class="suggestion-row">
+                <div class="suggestion-title">
+                    <h2>Recommended for You</h2>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="suggestion-content">
+                    <!-- 3 kart daha (örnek) -->
+                    <article class="suggestion-item" data-title="Recommended One">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>7.0 IMDB</span>
+                                <span>13+</span>
+                                <span>2 h 10 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Recommended One">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="suggestion-item" data-title="Recommended Two">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>8.4 IMDB</span>
+                                <span>16+</span>
+                                <span>1 h 50 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Recommended Two">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="suggestion-item" data-title="Recommended Three">
+                        <div class="card-image"></div>
+                        <div class="suggestion-item-content">
+                            <h3>MOVIE NAME</h3>
+                            <div class="suggestion-details">
+                                <span>6.9 IMDB</span>
+                                <span>7+</span>
+                                <span>1 h 40 min</span>
+                            </div>
+                            <button class="btn-card btn-md" data-movie="Recommended Three">
+                                ▶ Play Now
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#">Term Of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Watch List</a>
+            </nav>
+        </div>
+
+        <div class="footer-middle">
+            <p class="copyright">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <p>Follow Us</p>
+                <div class="footer-icons">
+                    <span>📘</span>
+                    <span>🐦</span>
+                    <span>▶</span>
+                    <span>📸</span>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p>Apps</p>
+                <div class="store-badges">
+                    <div class="store-badge">App Store</div>
+                    <div class="store-badge">Google Play</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- JS DOSYA ADI: script.js -->
+<script src="script.js"></script>
+</body>
+</html>
